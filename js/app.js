@@ -5,7 +5,7 @@
   const postList = document.getElementById('post-list');
   const tagsFilter = document.getElementById('tags-filter');
 
-  fetch('./posts.json')
+  fetch('./posts.json?v=' + Date.now())
     .then((res) => res.json())
     .then((posts) => {
       // Sort newest first
