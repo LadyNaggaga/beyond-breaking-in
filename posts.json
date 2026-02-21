@@ -1,0 +1,16 @@
+[
+  {
+    "slug": "hello-world",
+    "title": "Hello, World! Welcome to My Blog",
+    "date": "2026-02-20",
+    "excerpt": "The very first post — why I started this blog, what to expect, and a quick hello.",
+    "tags": ["meta", "personal"]
+  },
+  {
+    "slug": "markdown-features-demo",
+    "title": "A Tour of Markdown Features",
+    "date": "2026-02-19",
+    "excerpt": "A kitchen-sink demo of all the Markdown features this blog supports — headings, code blocks, images, and more.",
+    "tags": ["demo", "markdown"]
+  }
+]
