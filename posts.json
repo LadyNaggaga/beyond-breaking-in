@@ -1,5 +1,12 @@
 [
   {
+    "slug": "coming-soon",
+    "title": "Coming Soon",
+    "date": "2026-02-21",
+    "excerpt": "Something is brewing. New posts are on the way — honest reflections, lessons learned, and notes I wish someone had handed me earlier.",
+    "tags": ["meta"]
+  },
+  {
     "slug": "hello-world",
     "title": "Hello, World! Welcome to My Blog",
     "date": "2026-02-20",
