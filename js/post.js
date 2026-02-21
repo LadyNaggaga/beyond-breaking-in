@@ -14,8 +14,8 @@
 
   // Load post metadata + markdown in parallel
   Promise.all([
-    fetch('/posts.json').then((r) => r.json()),
-    fetch(`/posts/${slug}.md`).then((r) => {
+    fetch('./posts.json').then((r) => r.json()),
+    fetch(`./posts/${slug}.md`).then((r) => {
       if (!r.ok) throw new Error('Not found');
       return r.text();
     }),
@@ -34,7 +34,7 @@
         <div class="post-header">
           <div class="post-title-row">
             <h1>${escapeHtml(title)}</h1>
-            <img src="/images/logo.png" alt="" class="post-title-logo">
+            <img src="./images/logo.png" alt="" class="post-title-logo">
           </div>
           <p class="post-meta">
             ${date ? formatDate(date) : ''}

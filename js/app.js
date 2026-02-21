@@ -5,7 +5,7 @@
   const postList = document.getElementById('post-list');
   const tagsFilter = document.getElementById('tags-filter');
 
-  fetch('/posts.json')
+  fetch('./posts.json')
     .then((res) => res.json())
     .then((posts) => {
       // Sort newest first
@@ -56,7 +56,7 @@
       .map(
         (p) => `
       <div class="post-card">
-        <a class="post-card-link" href="/post.html?slug=${encodeURIComponent(p.slug)}">
+        <a class="post-card-link" href="./post.html?slug=${encodeURIComponent(p.slug)}">
           <h2 class="post-card-title">${escapeHtml(p.title)}</h2>
           <p class="post-card-date">${formatDate(p.date)}</p>
           <p class="post-card-excerpt">${escapeHtml(p.excerpt)}</p>
